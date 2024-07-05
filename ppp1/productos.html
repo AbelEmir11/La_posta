@@ -46,17 +46,26 @@
     <section id="productos">
         <h2>NUESTROS PRODUCTOS</h2>
         <!-- Aquí puedes agregar información sobre los productos -->
-        <h4>Todos nuestos productos son hechos con amor, libres de quimicos y conservantes</h4>
+        <h4>Todos nuestros productos son hechos con amor, libres de quimicos y conservantes</h4>
         <h3>CONSERVAS</h3>
-        <img src="/ppp1/imagenes/durazno hijas.jpg" class="durazno" alt="imagen">
-        <img src="/ppp1/imagenes/dulce2.jpg" class="mermeladas" alt="imagen">
-        <img src="/ppp1/imagenes/dulces.jpg" class="dulce" alt="imagen">
-        <img src="/ppp1/imagenes/turron.jpg" class="turron" alt="imagen">
-        <img src="/ppp1/imagenes/turron1.jpg" class="turron1" alt="imagen">
-        <img src="/ppp1/imagenes/estante.jpg" class="durazno" alt="imagen">
-        <img src="/ppp1/imagenes/vinoramora.jpg" class="vino" alt="imagen">
-        <img src="/ppp1/imagenes/verdura.jpg" class="verdu" alt="imagen">
+        <div class="carrusel">
+        <div class="carrusel-item">
+      
+        <section id="mora">
+        <img src="/ppp1/imagenes/durazno hijas.jpg"class="carrusel-imagen" alt="imagen" data-precio="$1200">
+        <img src="/ppp1/imagenes/dulce2.jpg"   class="carrusel-imagen" alt="imagen" data-precio="$1000">
+        <img src="/ppp1/imagenes/dulces.jpg"   class="carrusel-imagen" alt="imagen"data-precio="$600">
+        <img src="/ppp1/imagenes/turron.jpg"   class="carrusel-imagen" alt="imagen" data-precio="$200">
+        <img src="/ppp1/imagenes/turron1.jpg"   class="carrusel-imagen" alt="imagen" data-precio=$100>
+        <img src="/ppp1/imagenes/estante.jpg" class="durazno" alt="imagen" data-precio="$500">
+        <img src="/ppp1/imagenes/vinoramora.jpg" class="vino" alt="imagen" data-precio="$300">
+        <img src="/ppp1/imagenes/verdura.jpg" class="verdu" alt="imagen" data-precio="$900">
+       </section>
+       </div>
+       </div>
+       
         <h3>ARTESANIAS</h3>
+        <section id="mora">
         <img src="/ppp1/imagenes/atrapasueños.jpg" class="" alt="imagen">
         <img src="/ppp1/imagenes/lana.jpg" class="lana" alt="imagen">
         <img src="/ppp1/imagenes/chupalla.jpg" class="durazno" alt="imagen">
@@ -64,15 +73,36 @@
         <img src="/ppp1/imagenes/artesania.jpg" class="durazno" alt="imagen">
         <img src="/ppp1/imagenes/mimbre.jpg" class="durazno" alt="imagen">
         <img src="/ppp1/imagenes/mimbre1.jpg" class="durazno" alt="imagen">
-        <img src="/ppp1/imagenes/tela.jpg" class="durazno" alt="imagen">
+        <img src="/ppp1/imagenes/tela.jpg" class="durazno" alt="imagen"></section>
         <h3>CUIDADO PERSONAL</h3>
+        <section id="mora">
         <img src="/ppp1/imagenes/aceitenatural.jpg" class="durazno" alt="imagen">
         <img src="/ppp1/imagenes/shampoo.jpg" class="durazno" alt="imagen">
         <img src="/ppp1/imagenes/acondicionadorsolido.jpg" class="durazno" alt="imagen">
         <img src="/ppp1/imagenes/crema.jpg" class="durazno" alt="imagen">
         <img src="/ppp1/imagenes/desodorante.jpg" class="durazno" alt="imagen">
-        <img src="/ppp1/imagenes/cremacorporal.jpg" class="durazno" alt="imagen">
+        <img src="/ppp1/imagenes/cremacorporal.jpg" class="durazno" alt="imagen"></section>
     </section>
+    <h2>Agregar Producto</h2>
+<form id="form-producto" action="agregar_producto.php" method="post">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required><br>
+
+    <label>Descripción:</label>
+    <textarea name="descripcion" required></textarea><br>
+
+    <label>Precio:</label>
+    <input type="number" step="0.01" name="precio" required><br>
+
+    <label>Stock:</label>
+    <input type="number" name="stock" required><br>
+
+    <label>Categoría:</label>
+    <input type="text" name="categoria"><br>
+
+    <button type="submit">Agregar Producto</button>
+</form>
+
 
 </body>
 </html>
