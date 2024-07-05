@@ -1,0 +1,89 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(144, 238, 144, 0.711);
+}
+
+header {
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+    
+}
+.logo img{
+    width: 100%; height: 50%; 
+}
+
+nav ul {
+    list-style-type: lower-greek;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: rgb(164, 175, 12);
+    color: #333;
+}
+
+section {
+    padding: 50px;
+}
+section img{
+    width: 300px; height: 200px;
+    
+}
+img{
+    margin: auto;
+    cursor: pointer;
+    
+}
+section h4{
+    text-align: left;
+
+}
+
+
+footer {
+    background-color:rgb(144, 238, 144);
+    color: #07000a;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+     }}
+    
+     #mora {
+        display: flex;
+        margin-bottom: 10px;
+        width: 1000px;
+        height: 200px;
+     }
+     #mora img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        filter: brightness(80%);
+        transition: .7s ease;
+     }
+     #mora img:hover{
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(130%);
+     }
