@@ -1,0 +1,21 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Backend para una tienda online utilizando Node.js y MySQL.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "dotenv": "^10.0.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "author": "Tu Nombre",
+  "license": "ISC"
+}
